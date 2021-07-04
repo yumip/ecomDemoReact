@@ -1,0 +1,127 @@
+[debug] [2021-07-04T05:42:26.438Z] ----------------------------------------------------------------------
+[debug] [2021-07-04T05:42:26.441Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\yumip\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2021-07-04T05:42:26.441Z] CLI Version:   9.6.1
+[debug] [2021-07-04T05:42:26.441Z] Platform:      win32
+[debug] [2021-07-04T05:42:26.441Z] Node Version:  v14.4.0
+[debug] [2021-07-04T05:42:26.444Z] Time:          Sun Jul 04 2021 15:42:26 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2021-07-04T05:42:26.444Z] ----------------------------------------------------------------------
+[debug] [2021-07-04T05:42:26.444Z] 
+[debug] [2021-07-04T05:42:26.447Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-07-04T05:42:26.462Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-04T05:42:26.463Z] > authorizing via signed-in user
+[debug] [2021-07-04T05:42:26.463Z] [iam] checking project ecommerce-c215f for permissions ["firebase.projects.get"]
+[debug] [2021-07-04T05:42:26.464Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-04T05:42:26.464Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-04T05:42:26.739Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Sun, 04 Jul 2021 05:42:26 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-04T05:42:26.744Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-c215f:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-07-04T05:42:27.182Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 04 Jul 2021 05:42:27 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=192","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-04T05:42:27.238Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-07-04T05:42:27.239Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[warn] !  Your requested "node" version "12" doesn't match your global version "14" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"12\" doesn't match your global version \"14\""}}
+[debug] [2021-07-04T05:42:29.220Z] defaultcredentials: writing to file C:\Users\yumip\AppData\Roaming\firebase\yumipatton_gmail_com_application_default_credentials.json
+[debug] [2021-07-04T05:42:29.221Z] DEBUG: Setting GAC to C:\Users\yumip\AppData\Roaming\firebase\yumipatton_gmail_com_application_default_credentials.json
+[debug] [2021-07-04T05:42:29.222Z] > refreshing access token with scopes: []
+[debug] [2021-07-04T05:42:29.222Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-04T05:42:29.517Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sun, 04 Jul 2021 05:42:29 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-04T05:42:29.526Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-c215f/adminSdkConfig [none]
+[debug] [2021-07-04T05:42:30.245Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-c215f/adminSdkConfig 200
+[debug] [2021-07-04T05:42:30.246Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-c215f/adminSdkConfig {"projectId":"ecommerce-c215f","databaseURL":"https://ecommerce-c215f-default-rtdb.firebaseio.com","storageBucket":"ecommerce-c215f.appspot.com","locationId":"australia-southeast1"}
+[debug] [2021-07-04T05:42:30.260Z] [functions] Watching "C:\Users\yumip\OneDrive\Desktop\Projects\ecomDemoReact\functions" for Cloud Functions...
+[debug] [2021-07-04T05:42:30.276Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-07-04T05:42:30.277Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2021-07-04T05:42:30.277Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-07-04T05:42:30.277Z] DEBUG: [worker-~diagnostic~-b04e4589-ad04-4388-9ca2-4f835335aeb7]: Assigning socketPath: \\?\pipe\C:\Users\yumip\OneDrive\Desktop\Projects\ecomDemoReact\functions\24204
+[debug] [2021-07-04T05:42:30.277Z] DEBUG: [worker-~diagnostic~-b04e4589-ad04-4388-9ca2-4f835335aeb7]: BUSY
+[debug] [2021-07-04T05:42:30.480Z] DEBUG: [runtime-status] [24204] Functions runtime initialized. {"cwd":"C:\\Users\\yumip\\OneDrive\\Desktop\\Projects\\ecomDemoReact\\functions","node_version":"14.4.0"}
+[debug] [2021-07-04T05:42:30.481Z] DEBUG: [runtime-status] [24204] Disabled runtime features: undefined
+[debug] [2021-07-04T05:42:30.485Z] DEBUG: [runtime-status] [24204] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.5.0","resolution":"C:\\Users\\yumip\\OneDrive\\Desktop\\Projects\\ecomDemoReact\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-07-04T05:42:30.487Z] DEBUG: [runtime-status] [24204] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.2","resolution":"C:\\Users\\yumip\\OneDrive\\Desktop\\Projects\\ecomDemoReact\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-07-04T05:42:30.489Z] DEBUG: [runtime-status] [24204] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.2","resolution":"C:\\Users\\yumip\\OneDrive\\Desktop\\Projects\\ecomDemoReact\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-07-04T05:42:30.490Z] DEBUG: [runtime-status] [24204] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-07-04T05:42:30.491Z] DEBUG: [runtime-status] [24204] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.2","resolution":"C:\\Users\\yumip\\OneDrive\\Desktop\\Projects\\ecomDemoReact\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-07-04T05:42:30.556Z] DEBUG: [runtime-status] [24204] Checked functions.config() {"config":{}}
+[debug] [2021-07-04T05:42:30.556Z] DEBUG: [runtime-status] [24204] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.13.2","resolution":"C:\\Users\\yumip\\OneDrive\\Desktop\\Projects\\ecomDemoReact\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-07-04T05:42:30.556Z] DEBUG: [runtime-status] [24204] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.2","resolution":"C:\\Users\\yumip\\OneDrive\\Desktop\\Projects\\ecomDemoReact\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-07-04T05:42:30.557Z] DEBUG: [runtime-status] [24204] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.5.0","resolution":"C:\\Users\\yumip\\OneDrive\\Desktop\\Projects\\ecomDemoReact\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-07-04T05:42:30.558Z] DEBUG: [runtime-status] [24204] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.2","resolution":"C:\\Users\\yumip\\OneDrive\\Desktop\\Projects\\ecomDemoReact\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-07-04T05:42:30.558Z] DEBUG: [runtime-status] [24204] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.5.0","resolution":"C:\\Users\\yumip\\OneDrive\\Desktop\\Projects\\ecomDemoReact\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  It looks like you're trying to access functions.config().ecomreactstripe but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator {"metadata":{"emulator":{"name":"functions"},"message":"It looks like you're trying to access functions.config().ecomreactstripe but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator"}}
+[warn] !  TypeError: Cannot read property 'key' of undefined
+    at Object.<anonymous> (C:\Users\yumip\OneDrive\Desktop\Projects\ecomDemoReact\functions\index.js:5:68)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at initializeRuntime (C:\Users\yumip\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:678:29)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async handleMessage (C:\Users\yumip\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:716:20) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'key' of undefined\n    at Object.<anonymous> (C:\\Users\\yumip\\OneDrive\\Desktop\\Projects\\ecomDemoReact\\functions\\index.js:5:68)\n    at Module._compile (internal/modules/cjs/loader.js:1200:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)\n    at Module.load (internal/modules/cjs/loader.js:1049:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:937:14)\n    at Module.require (internal/modules/cjs/loader.js:1089:19)\n    at require (internal/modules/cjs/helpers.js:73:18)\n    at initializeRuntime (C:\\Users\\yumip\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:678:29)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async handleMessage (C:\\Users\\yumip\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:716:20)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2021-07-04T05:42:30.833Z] DEBUG: [worker-~diagnostic~-b04e4589-ad04-4388-9ca2-4f835335aeb7]: exited
+[debug] [2021-07-04T05:42:30.833Z] DEBUG: [worker-~diagnostic~-b04e4589-ad04-4388-9ca2-4f835335aeb7]: FINISHED
+[debug] [2021-07-04T05:43:36.540Z] ----------------------------------------------------------------------
+[debug] [2021-07-04T05:43:36.542Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\yumip\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2021-07-04T05:43:36.542Z] CLI Version:   9.6.1
+[debug] [2021-07-04T05:43:36.542Z] Platform:      win32
+[debug] [2021-07-04T05:43:36.542Z] Node Version:  v14.4.0
+[debug] [2021-07-04T05:43:36.543Z] Time:          Sun Jul 04 2021 15:43:36 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2021-07-04T05:43:36.543Z] ----------------------------------------------------------------------
+[debug] [2021-07-04T05:43:36.543Z] 
+[debug] [2021-07-04T05:43:36.550Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-04T05:43:36.550Z] > authorizing via signed-in user
+[debug] [2021-07-04T05:43:36.550Z] [iam] checking project ecommerce-c215f for permissions ["firebase.projects.get"]
+[debug] [2021-07-04T05:43:36.552Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-04T05:43:36.553Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-04T05:43:36.817Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sun, 04 Jul 2021 05:43:36 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-04T05:43:36.832Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ecommerce-c215f:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-07-04T05:43:37.157Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 04 Jul 2021 05:43:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=193","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  Your requested "node" version "12" doesn't match your global version "14" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"12\" doesn't match your global version \"14\""}}
+[debug] [2021-07-04T05:43:39.194Z] defaultcredentials: writing to file C:\Users\yumip\AppData\Roaming\firebase\yumipatton_gmail_com_application_default_credentials.json
+[debug] [2021-07-04T05:43:39.195Z] DEBUG: Setting GAC to C:\Users\yumip\AppData\Roaming\firebase\yumipatton_gmail_com_application_default_credentials.json
+[debug] [2021-07-04T05:43:39.196Z] > refreshing access token with scopes: []
+[debug] [2021-07-04T05:43:39.196Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-04T05:43:39.488Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sun, 04 Jul 2021 05:43:39 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-04T05:43:39.499Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-c215f/adminSdkConfig [none]
+[debug] [2021-07-04T05:43:40.181Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-c215f/adminSdkConfig 200
+[debug] [2021-07-04T05:43:40.182Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecommerce-c215f/adminSdkConfig {"projectId":"ecommerce-c215f","databaseURL":"https://ecommerce-c215f-default-rtdb.firebaseio.com","storageBucket":"ecommerce-c215f.appspot.com","locationId":"australia-southeast1"}
+[debug] [2021-07-04T05:43:40.203Z] [functions] Watching "C:\Users\yumip\OneDrive\Desktop\Projects\ecomDemoReact\functions" for Cloud Functions...
+[debug] [2021-07-04T05:43:40.217Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-07-04T05:43:40.217Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2021-07-04T05:43:40.217Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-07-04T05:43:40.218Z] DEBUG: [worker-~diagnostic~-09e71406-91b3-4d42-bf41-a9d211ba7462]: Assigning socketPath: \\?\pipe\C:\Users\yumip\OneDrive\Desktop\Projects\ecomDemoReact\functions\5416
+[debug] [2021-07-04T05:43:40.218Z] DEBUG: [worker-~diagnostic~-09e71406-91b3-4d42-bf41-a9d211ba7462]: BUSY
+[debug] [2021-07-04T05:43:40.411Z] DEBUG: [runtime-status] [5416] Functions runtime initialized. {"cwd":"C:\\Users\\yumip\\OneDrive\\Desktop\\Projects\\ecomDemoReact\\functions","node_version":"14.4.0"}
+[debug] [2021-07-04T05:43:40.412Z] DEBUG: [runtime-status] [5416] Disabled runtime features: undefined
+[debug] [2021-07-04T05:43:40.415Z] DEBUG: [runtime-status] [5416] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.5.0","resolution":"C:\\Users\\yumip\\OneDrive\\Desktop\\Projects\\ecomDemoReact\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-07-04T05:43:40.417Z] DEBUG: [runtime-status] [5416] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.2","resolution":"C:\\Users\\yumip\\OneDrive\\Desktop\\Projects\\ecomDemoReact\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-07-04T05:43:40.418Z] DEBUG: [runtime-status] [5416] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.2","resolution":"C:\\Users\\yumip\\OneDrive\\Desktop\\Projects\\ecomDemoReact\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-07-04T05:43:40.420Z] DEBUG: [runtime-status] [5416] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-07-04T05:43:40.421Z] DEBUG: [runtime-status] [5416] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.2","resolution":"C:\\Users\\yumip\\OneDrive\\Desktop\\Projects\\ecomDemoReact\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-07-04T05:43:40.464Z] DEBUG: [runtime-status] [5416] Checked functions.config() {"config":{}}
+[debug] [2021-07-04T05:43:40.465Z] DEBUG: [runtime-status] [5416] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.13.2","resolution":"C:\\Users\\yumip\\OneDrive\\Desktop\\Projects\\ecomDemoReact\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-07-04T05:43:40.465Z] DEBUG: [runtime-status] [5416] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.2","resolution":"C:\\Users\\yumip\\OneDrive\\Desktop\\Projects\\ecomDemoReact\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-07-04T05:43:40.466Z] DEBUG: [runtime-status] [5416] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.5.0","resolution":"C:\\Users\\yumip\\OneDrive\\Desktop\\Projects\\ecomDemoReact\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-07-04T05:43:40.466Z] DEBUG: [runtime-status] [5416] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.2","resolution":"C:\\Users\\yumip\\OneDrive\\Desktop\\Projects\\ecomDemoReact\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-07-04T05:43:40.467Z] DEBUG: [runtime-status] [5416] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.5.0","resolution":"C:\\Users\\yumip\\OneDrive\\Desktop\\Projects\\ecomDemoReact\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[warn] !  It looks like you're trying to access functions.config().ecomreactstripe but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator {"metadata":{"emulator":{"name":"functions"},"message":"It looks like you're trying to access functions.config().ecomreactstripe but there is no value there. You can learn more about setting up config here: https://firebase.google.com/docs/functions/local-emulator"}}
+[warn] !  TypeError: Cannot read property 'key' of undefined
+    at Object.<anonymous> (C:\Users\yumip\OneDrive\Desktop\Projects\ecomDemoReact\functions\index.js:5:68)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at initializeRuntime (C:\Users\yumip\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:678:29)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async handleMessage (C:\Users\yumip\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js:716:20) {"metadata":{"emulator":{"name":"functions"},"message":"TypeError: Cannot read property 'key' of undefined\n    at Object.<anonymous> (C:\\Users\\yumip\\OneDrive\\Desktop\\Projects\\ecomDemoReact\\functions\\index.js:5:68)\n    at Module._compile (internal/modules/cjs/loader.js:1200:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)\n    at Module.load (internal/modules/cjs/loader.js:1049:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:937:14)\n    at Module.require (internal/modules/cjs/loader.js:1089:19)\n    at require (internal/modules/cjs/helpers.js:73:18)\n    at initializeRuntime (C:\\Users\\yumip\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:678:29)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)\n    at async handleMessage (C:\\Users\\yumip\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\functionsEmulatorRuntime.js:716:20)"}}
+[warn] !  We were unable to load your functions code. (see above) {"metadata":{"emulator":{"name":"functions"}}}
+[debug] [2021-07-04T05:43:40.658Z] DEBUG: [worker-~diagnostic~-09e71406-91b3-4d42-bf41-a9d211ba7462]: exited
+[debug] [2021-07-04T05:43:40.658Z] DEBUG: [worker-~diagnostic~-09e71406-91b3-4d42-bf41-a9d211ba7462]: FINISHED
